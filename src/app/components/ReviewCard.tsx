@@ -1,9 +1,19 @@
-import React from 'react'
+// import React from 'react'
+import type { Review } from '../interfaces/review.interface';
 
-const ReviewCard = () => {
-  return (
-    <div>ReviewCard</div>
-  )
+interface ReviewProps {
+  review: Review;
 }
 
-export default ReviewCard
+const ReviewCard = ({ review }: ReviewProps) => {
+  return (
+    <>
+      <div>{review.title}</div>
+      <div>{review.date}</div>
+      <div>{review.rating}</div>
+      <div>{review.review}</div>
+    </>
+  );
+};
+
+export default ReviewCard;
