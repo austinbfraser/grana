@@ -1,0 +1,9 @@
+.reviewList {
+  width: 600px
+}
+
+.reviewCard {
+  border: 1px solid gray;
+  margin-bottom: 20px;
+  padding: 10px
+}
